@@ -1,4 +1,7 @@
-import React from 'react';
+// import React from 'react';  DEZE MOET DUS WEG
+import React, { Fragment } from 'react';
+
+
 import Product from './Product';
 
 
@@ -11,6 +14,15 @@ import './App.css';
 
 function App() {
     return (
+
+        <>
+            <header>
+                <h1>Fruit perfection</h1>
+                <button type="button">
+                    Shop nu
+                </button>
+            </header>
+
         <main>
             <Product
                 image={citroenen}
@@ -28,6 +40,7 @@ function App() {
                 description="Een ijsblokje of ijsklontje is bevroren water in de vorm van een klein blokje. Het wordt gemaakt in een diepvriezer door water in een plastic vorm te laten bevriezen."
             />
         </main>
+            </>
     );
 }
 
