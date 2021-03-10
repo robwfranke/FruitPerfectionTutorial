@@ -18,7 +18,10 @@ function App() {
         <>
             <header>
                 <h1>Fruit perfection</h1>
-                <button type="button">
+                <button
+                    type="button"
+                    onClick={() => console.log("Jij wil shoppen!")}
+                >{/*waar komt deze weg???????*/}
                     Shop nu
                 </button>
             </header>
